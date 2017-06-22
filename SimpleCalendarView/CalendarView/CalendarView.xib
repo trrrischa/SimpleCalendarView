@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CalendarView">
+            <connections>
+                <outlet property="daysCollectionView" destination="dtU-Lt-Iec" id="SFe-dt-kWO"/>
+                <outlet property="monthNameLabel" destination="mm7-Zh-GgN" id="k0C-fM-zQs"/>
+                <outlet property="monthView" destination="EYU-Cd-10L" id="e4P-e0-PUH"/>
+                <outlet property="nextButton" destination="eon-P1-23e" id="kj3-O4-Fbm"/>
+                <outlet property="prevButton" destination="HcH-jJ-sph" id="1Oi-v4-lnF"/>
+                <outlet property="weekDaysView" destination="Yoe-CR-vhR" id="aGX-X1-DUm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="364"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYU-Cd-10L">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcH-jJ-sph">
+                            <rect key="frame" x="2" y="6" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="Uec-aD-yM0"/>
+                                <constraint firstAttribute="height" constant="44" id="Zes-p4-Y2g"/>
+                            </constraints>
+                            <state key="normal" image="prev_month"/>
+                            <connections>
+                                <action selector="PreviousPressed:" destination="-1" eventType="touchUpInside" id="0Xm-sw-T95"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eon-P1-23e">
+                            <rect key="frame" x="329" y="6" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="6h2-A1-gbn"/>
+                                <constraint firstAttribute="height" constant="44" id="KNF-1Q-NZw"/>
+                            </constraints>
+                            <state key="normal" image="next_month"/>
+                            <connections>
+                                <action selector="NextPressed:" destination="-1" eventType="touchUpInside" id="4eg-0w-C4w"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mm7-Zh-GgN">
+                            <rect key="frame" x="54" y="0.0" width="267" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="HcH-jJ-sph" firstAttribute="leading" secondItem="EYU-Cd-10L" secondAttribute="leading" constant="2" id="3PB-bK-a9N"/>
+                        <constraint firstItem="mm7-Zh-GgN" firstAttribute="leading" secondItem="HcH-jJ-sph" secondAttribute="trailing" constant="8" id="GIW-ug-Z63"/>
+                        <constraint firstItem="eon-P1-23e" firstAttribute="leading" secondItem="mm7-Zh-GgN" secondAttribute="trailing" constant="8" id="X6i-WZ-IwZ"/>
+                        <constraint firstAttribute="bottom" secondItem="mm7-Zh-GgN" secondAttribute="bottom" id="cL8-Fh-IgY"/>
+                        <constraint firstAttribute="height" constant="50" id="eth-Zx-IBQ"/>
+                        <constraint firstItem="eon-P1-23e" firstAttribute="top" secondItem="EYU-Cd-10L" secondAttribute="top" constant="6" id="gpP-TV-Z66"/>
+                        <constraint firstItem="mm7-Zh-GgN" firstAttribute="top" secondItem="EYU-Cd-10L" secondAttribute="top" id="my5-sL-x4A"/>
+                        <constraint firstAttribute="trailing" secondItem="eon-P1-23e" secondAttribute="trailing" constant="2" id="sVZ-x6-FWe"/>
+                        <constraint firstItem="HcH-jJ-sph" firstAttribute="top" secondItem="EYU-Cd-10L" secondAttribute="top" constant="6" id="v5F-jE-fa7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yoe-CR-vhR">
+                    <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="zS6-5B-xXs"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dtU-Lt-Iec">
+                    <rect key="frame" x="0.0" y="94" width="375" height="270"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="zf4-yD-gyg">
+                        <size key="itemSize" width="44" height="44"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dtU-Lt-Iec" secondAttribute="trailing" id="2g4-jB-3wg"/>
+                <constraint firstItem="Yoe-CR-vhR" firstAttribute="top" secondItem="EYU-Cd-10L" secondAttribute="bottom" id="Dev-j7-ive"/>
+                <constraint firstItem="dtU-Lt-Iec" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O6v-sE-cw7"/>
+                <constraint firstItem="dtU-Lt-Iec" firstAttribute="top" secondItem="Yoe-CR-vhR" secondAttribute="bottom" id="PiR-C2-leL"/>
+                <constraint firstAttribute="bottom" secondItem="dtU-Lt-Iec" secondAttribute="bottom" id="W21-DR-aNe"/>
+                <constraint firstItem="Yoe-CR-vhR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kUg-l0-3OQ"/>
+                <constraint firstItem="EYU-Cd-10L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m4R-LO-7xC"/>
+                <constraint firstAttribute="trailing" secondItem="Yoe-CR-vhR" secondAttribute="trailing" id="qkL-Dj-OaS"/>
+                <constraint firstItem="EYU-Cd-10L" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rM3-rH-5HJ"/>
+                <constraint firstAttribute="trailing" secondItem="EYU-Cd-10L" secondAttribute="trailing" id="zIm-mn-Ikt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.5" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="next_month" width="44" height="44"/>
+        <image name="prev_month" width="44" height="44"/>
+    </resources>
+</document>

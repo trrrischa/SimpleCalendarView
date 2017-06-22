@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4E13C6C1EFB7FCB00280711 /* CalendarDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C631EFB7FCB00280711 /* CalendarDateRange.m */; };
+		C4E13C6D1EFB7FCB00280711 /* CalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C651EFB7FCB00280711 /* CalendarDayCell.m */; };
+		C4E13C6E1EFB7FCB00280711 /* CalendarDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E13C661EFB7FCB00280711 /* CalendarDayCell.xib */; };
+		C4E13C6F1EFB7FCB00280711 /* CalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C681EFB7FCB00280711 /* CalendarView.m */; };
+		C4E13C701EFB7FCB00280711 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E13C691EFB7FCB00280711 /* CalendarView.xib */; };
+		C4E13C711EFB7FCB00280711 /* DateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C6B1EFB7FCB00280711 /* DateUtils.m */; };
+		C4E13C771EFB805C00280711 /* UIColor+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C741EFB805C00280711 /* UIColor+Constants.m */; };
+		C4E13C781EFB805C00280711 /* UIFont+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C761EFB805C00280711 /* UIFont+Constants.m */; };
+		C4E13C7C1EFB899000280711 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C4E13C7B1EFB899000280711 /* NSDate+Utils.m */; };
 		E1DD7F0E1EFB710B007DB9C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DD7F0D1EFB710B007DB9C9 /* main.m */; };
 		E1DD7F111EFB710B007DB9C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DD7F101EFB710B007DB9C9 /* AppDelegate.m */; };
 		E1DD7F141EFB710B007DB9C9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1DD7F131EFB710B007DB9C9 /* ViewController.m */; };
@@ -16,6 +25,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4E13C621EFB7FCB00280711 /* CalendarDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarDateRange.h; path = CalendarView/CalendarDateRange.h; sourceTree = "<group>"; };
+		C4E13C631EFB7FCB00280711 /* CalendarDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarDateRange.m; path = CalendarView/CalendarDateRange.m; sourceTree = "<group>"; };
+		C4E13C641EFB7FCB00280711 /* CalendarDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarDayCell.h; path = CalendarView/CalendarDayCell.h; sourceTree = "<group>"; };
+		C4E13C651EFB7FCB00280711 /* CalendarDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarDayCell.m; path = CalendarView/CalendarDayCell.m; sourceTree = "<group>"; };
+		C4E13C661EFB7FCB00280711 /* CalendarDayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarDayCell.xib; path = CalendarView/CalendarDayCell.xib; sourceTree = "<group>"; };
+		C4E13C671EFB7FCB00280711 /* CalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalendarView.h; path = CalendarView/CalendarView.h; sourceTree = "<group>"; };
+		C4E13C681EFB7FCB00280711 /* CalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CalendarView.m; path = CalendarView/CalendarView.m; sourceTree = "<group>"; };
+		C4E13C691EFB7FCB00280711 /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CalendarView.xib; path = CalendarView/CalendarView.xib; sourceTree = "<group>"; };
+		C4E13C6A1EFB7FCB00280711 /* DateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateUtils.h; path = CalendarView/DateUtils.h; sourceTree = "<group>"; };
+		C4E13C6B1EFB7FCB00280711 /* DateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateUtils.m; path = CalendarView/DateUtils.m; sourceTree = "<group>"; };
+		C4E13C731EFB805C00280711 /* UIColor+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Constants.h"; path = "Constants/UIColor+Constants.h"; sourceTree = "<group>"; };
+		C4E13C741EFB805C00280711 /* UIColor+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Constants.m"; path = "Constants/UIColor+Constants.m"; sourceTree = "<group>"; };
+		C4E13C751EFB805C00280711 /* UIFont+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIFont+Constants.h"; path = "Constants/UIFont+Constants.h"; sourceTree = "<group>"; };
+		C4E13C761EFB805C00280711 /* UIFont+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIFont+Constants.m"; path = "Constants/UIFont+Constants.m"; sourceTree = "<group>"; };
+		C4E13C7A1EFB899000280711 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Utils.h"; path = "Utils/NSDate+Utils.h"; sourceTree = "<group>"; };
+		C4E13C7B1EFB899000280711 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Utils.m"; path = "Utils/NSDate+Utils.m"; sourceTree = "<group>"; };
 		E1DD7F091EFB710B007DB9C9 /* SimpleCalendarView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCalendarView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DD7F0D1EFB710B007DB9C9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E1DD7F0F1EFB710B007DB9C9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +64,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C4E13C611EFB7FAA00280711 /* CalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				C4E13C621EFB7FCB00280711 /* CalendarDateRange.h */,
+				C4E13C631EFB7FCB00280711 /* CalendarDateRange.m */,
+				C4E13C641EFB7FCB00280711 /* CalendarDayCell.h */,
+				C4E13C651EFB7FCB00280711 /* CalendarDayCell.m */,
+				C4E13C661EFB7FCB00280711 /* CalendarDayCell.xib */,
+				C4E13C671EFB7FCB00280711 /* CalendarView.h */,
+				C4E13C681EFB7FCB00280711 /* CalendarView.m */,
+				C4E13C691EFB7FCB00280711 /* CalendarView.xib */,
+				C4E13C6A1EFB7FCB00280711 /* DateUtils.h */,
+				C4E13C6B1EFB7FCB00280711 /* DateUtils.m */,
+			);
+			name = CalendarView;
+			sourceTree = "<group>";
+		};
+		C4E13C721EFB804F00280711 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C4E13C731EFB805C00280711 /* UIColor+Constants.h */,
+				C4E13C741EFB805C00280711 /* UIColor+Constants.m */,
+				C4E13C751EFB805C00280711 /* UIFont+Constants.h */,
+				C4E13C761EFB805C00280711 /* UIFont+Constants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		C4E13C791EFB888000280711 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C4E13C7A1EFB899000280711 /* NSDate+Utils.h */,
+				C4E13C7B1EFB899000280711 /* NSDate+Utils.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		E1DD7F001EFB710B007DB9C9 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +120,9 @@
 		E1DD7F0B1EFB710B007DB9C9 /* SimpleCalendarView */ = {
 			isa = PBXGroup;
 			children = (
+				C4E13C791EFB888000280711 /* Utils */,
+				C4E13C721EFB804F00280711 /* Constants */,
+				C4E13C611EFB7FAA00280711 /* CalendarView */,
 				E1DD7F0F1EFB710B007DB9C9 /* AppDelegate.h */,
 				E1DD7F101EFB710B007DB9C9 /* AppDelegate.m */,
 				E1DD7F121EFB710B007DB9C9 /* ViewController.h */,
@@ -137,7 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E13C6E1EFB7FCB00280711 /* CalendarDayCell.xib in Resources */,
 				E1DD7F1C1EFB710B007DB9C9 /* LaunchScreen.storyboard in Resources */,
+				C4E13C701EFB7FCB00280711 /* CalendarView.xib in Resources */,
 				E1DD7F191EFB710B007DB9C9 /* Assets.xcassets in Resources */,
 				E1DD7F171EFB710B007DB9C9 /* Main.storyboard in Resources */,
 			);
@@ -150,9 +217,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4E13C6F1EFB7FCB00280711 /* CalendarView.m in Sources */,
 				E1DD7F141EFB710B007DB9C9 /* ViewController.m in Sources */,
+				C4E13C6D1EFB7FCB00280711 /* CalendarDayCell.m in Sources */,
+				C4E13C771EFB805C00280711 /* UIColor+Constants.m in Sources */,
+				C4E13C7C1EFB899000280711 /* NSDate+Utils.m in Sources */,
 				E1DD7F111EFB710B007DB9C9 /* AppDelegate.m in Sources */,
+				C4E13C711EFB7FCB00280711 /* DateUtils.m in Sources */,
+				C4E13C781EFB805C00280711 /* UIFont+Constants.m in Sources */,
 				E1DD7F0E1EFB710B007DB9C9 /* main.m in Sources */,
+				C4E13C6C1EFB7FCB00280711 /* CalendarDateRange.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +385,7 @@
 				E1DD7F221EFB710B007DB9C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

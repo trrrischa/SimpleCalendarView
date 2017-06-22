@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CalendarView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet CalendarView *calendarView;
 
 @end
 
@@ -24,6 +27,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
